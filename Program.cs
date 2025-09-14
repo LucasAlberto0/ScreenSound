@@ -1,50 +1,33 @@
-﻿string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
+﻿
+//1
+Console.WriteLine("Escreva um número: ");
+string valor = Console.ReadLine()!;
+int notaMedia = int.Parse(valor);
 
-void ExibirMensagemDeBoasVindas()
+
+if (notaMedia >= 5)
 {
-    Console.WriteLine(@"
-░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
-██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
-╚█████╗░██║░░╚═╝██████╔╝█████╗░░█████╗░░██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
-░╚═══██╗██║░░██╗██╔══██╗██╔══╝░░██╔══╝░░██║╚████║  ░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
-██████╔╝╚█████╔╝██║░░██║███████╗███████╗██║░╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
-╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚══╝  ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░");
-    Console.WriteLine(mensagemDeBoasVindas);
+    Console.WriteLine("Nota suficiente para aprovação!");
+}
+else
+{
+    Console.WriteLine("Reprovou!");
 }
 
-void ExibirOpcoesDoMenu()
-{
-    Console.WriteLine("\nDigite 1 para registrar uma banda");
-    Console.WriteLine("Digite 2 para mostrar todas as bandas");
-    Console.WriteLine("Digite 3 para avaliar uma banda");
-    Console.WriteLine("Digite 4 para exibir a média de uma banda");
-    Console.WriteLine("Digite -1 para sair");
 
-    Console.Write("\nDigite a sua opcao: ");
-    string opcaoEscolhida = Console.ReadLine()!;
-    int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
-    switch (opcaoEscolhidaNumerica)
-    {
-        case 1:
-            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
-            break;
-        case 2:
-            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
-            break;
-        case 3:
-            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
-            break;
-        case 4:
-            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
-            break;
-        case -1:
-            Console.WriteLine("Tchau tchau :)");
-            break;
-        default: Console.WriteLine("Opção Inválida");
-            break;
-    }
-}
+//2
 
-ExibirMensagemDeBoasVindas();
-ExibirOpcoesDoMenu();
+List<string> linguagens = new List<string> { "C#", "Java", "JavaScript" };
+
+
+//3
+
+Console.WriteLine(linguagens[0]);
+
+//4
+
+Console.WriteLine("Digite a posição desejada: ");
+int posicao = int.Parse(Console.ReadLine());
+
+Console.WriteLine(linguagens[posicao]);
 
