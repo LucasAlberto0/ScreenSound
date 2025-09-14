@@ -1,33 +1,23 @@
-﻿
-//1
-Console.WriteLine("Escreva um número: ");
-string valor = Console.ReadLine()!;
-int notaMedia = int.Parse(valor);
-
-
-if (notaMedia >= 5)
+﻿Random aleatorio = new Random();
+int numeroSecreto = aleatorio.Next(1, 101);
+do
 {
-    Console.WriteLine("Nota suficiente para aprovação!");
-}
-else
-{
-    Console.WriteLine("Reprovou!");
-}
+    Console.Write("Digite um número entre 1 e 100: ");
+    int chute = int.Parse(Console.ReadLine());
 
+    if (chute == numeroSecreto)
+    {
+        Console.WriteLine("Parabéns! Você acertou o número.");
+        break;
+    }
+    else if (chute < numeroSecreto)
+    {
+        Console.WriteLine("O número é maior.");
+    }
+    else
+    {
+        Console.WriteLine("O número é menor.");
+    }
 
-//2
-
-List<string> linguagens = new List<string> { "C#", "Java", "JavaScript" };
-
-
-//3
-
-Console.WriteLine(linguagens[0]);
-
-//4
-
-Console.WriteLine("Digite a posição desejada: ");
-int posicao = int.Parse(Console.ReadLine());
-
-Console.WriteLine(linguagens[posicao]);
-
+} while (true);
+Console.WriteLine("O jogo acabou. Você acertou o número secreto!");
