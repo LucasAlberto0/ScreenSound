@@ -1,127 +1,87 @@
-﻿// //1
-// void operacoesBasicas()
-// {
-//     Console.WriteLine("1. Adição");
-//     Console.WriteLine("2. Divisão");
-//     Console.WriteLine("3. Subtração");
-//     Console.WriteLine("4. Multiplicação");
+﻿//1
 
+// Dictionary<string, List<double>> notasAlunos = new Dictionary<string, List<double>>();
+
+// // Adicione notas para alguns alunos
+// notasAlunos["João"] = new List<double> { 8.5, 9.0, 7.5 };
+// notasAlunos["Maria"] = new List<double> { 7.0, 8.0, 6.5 };
+
+// foreach (var aluno in notasAlunos)
+// {
+//     double soma = 0;
+//     for (int i = 0; i < aluno.Value.Count; i++)
+//     {
+//         soma += aluno.Value[i];
+//     }
+//     double media = soma / aluno.Value.Count;
+//     Console.WriteLine($"Média de {aluno.Key}: {media}");
 // }
 
-// operacoesBasicas();
+//2
 
-// string escolha = Console.ReadLine()!;
-//     int escolhaNumerica = int.Parse(escolha);
-
-// Console.WriteLine("Digite o primeiro número: ");
-
-// string num11 = Console.ReadLine()!;
-// double num1 = double.Parse(num11);
-
-// Console.WriteLine("Digite o primeiro número: ");
-
-// string num22 = Console.ReadLine()!;
-// double num2 = double.Parse(num22);
-
-// switch (escolhaNumerica)
+// Dictionary<string, int> estoque = new Dictionary<string, int>
 // {
-//     case 1:
-//         Console.WriteLine("Sua adição deu: " + (num1 + num2));
-//         break;
-//     case 2:
-//         Console.WriteLine("Sua Divisão deu: " + (num1 / num2));
-//         break;
-//     case 3:
-//         Console.WriteLine("Sua Subtração deu: " + (num1 - num2));
-//         break;
-//     case 4:
-//         Console.WriteLine("Sua Multiplicação deu: " + (num1 * num2));
-//         break;
-//     default:
-//         Console.WriteLine("Opção Inválida!");
-//         break;
+//     { "camisetas", 50 },
+//     { "calças", 30 },
+//     { "tênis", 20 },
+// };
+
+// string produto = "camisetas";
+
+// if (estoque.ContainsKey(produto))
+// {
+//     Console.WriteLine($"Quantidade em estoque de {produto}: {estoque[produto]} unidades.");
 // }
-
-// 2
-// List<string> bandas = new List<string> { "Metallica", "Iron Maiden", "Skillet" };
-
-// Console.WriteLine("Cadastre uma banda: ");
-// string bandaP = Console.ReadLine()!;
-// bandas.Add(bandaP);
-
-// foreach (string banda in bandas)
+// else
 // {
-//     Console.WriteLine($"Banda: {banda}");
+//     Console.WriteLine("Produto não encontrado no estoque.");
 // }
 
 //3
 
-// for (int i = 0; i < bandas.Count; i++)
+// Dictionary<string, string> perguntasERespostas = new Dictionary<string, string>
 // {
-//     Console.WriteLine($"Banda: {bandas[i]}");
+//     { "Qual é a capital do Brasil?", "Brasília" },
+//     { "Quanto é 7 vezes 8?", "56" },
+//     { "Quem escreveu 'Romeu e Julieta'?", "William Shakespeare" },
+//     // Adicione mais perguntas e respostas conforme necessário
+// };
+
+// int pontuacao = 0;
+
+// foreach (var pergunta in perguntasERespostas)
+// {
+//     Console.WriteLine(pergunta.Key);
+//     Console.Write("Sua resposta: ");
+//     string respostaUsuario = Console.ReadLine()!;
+
+//     if (respostaUsuario.ToLower() == pergunta.Value.ToLower())
+//     {
+//         Console.WriteLine("Correto!\n");
+//         pontuacao++;
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Incorreto. A resposta correta é: {pergunta.Value}\n");
+//     }
 // }
 
+// Console.WriteLine($"Pontuação final: {pontuacao} de {perguntasERespostas.Count}");
 
 //4
 
-// List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
-// int soma = 0;
-
-// foreach (int numero in numeros)
-// {
-//     soma += numero;
-// }
-
-// Console.WriteLine($"A soma dos elementos da lista é: {soma}");
-
-
-// List<double> numeros2 = new List<double> { 1.5, 2.5, 3.5, 4.5, 5.5 };
-// double soma2 = 0;
-
-// foreach (double numero2 in numeros2)
-// {
-//     soma2 += numero2;
-// }
-
-// double media = soma / numeros2.Count;
-// Console.WriteLine($"A média dos elementos da lista é: {media}");
-
-
-// List<int> numeros = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-// for (int i = 0; i < numeros.Count; i++)
-// {
-//     if (numeros[i] % 2 == 0) 
-//     {
-//         Console.WriteLine(numeros[i]);
-//     }
-// }
-
-//OU foreach (int numero in numeros)
-// {
-//     if (numero % 2 == 0) {
-//         Console.WriteLine(numero);
-//     }
-// }
-
-var notasAlunos = new Dictionary<string, Dictionary<string, List<int>>> {
-    { "Ana", new Dictionary<string, List<int>> {
-        { "C#", new List<int> { 8, 7, 6 } },
-        { "Java", new List<int> { 7, 6, 5 } },
-        { "Python", new List<int> { 9, 8, 8 } }
-    }},
-    { "Maria", new Dictionary<string, List<int>> {
-        { "C#", new List<int> { 6, 5, 4 } },
-        { "Java", new List<int> { 8, 7, 6 } },
-        { "Python", new List<int> { 6, 10, 5 } }
-    }},
-    { "Luiza", new Dictionary<string, List<int>> {
-        { "C#", new List<int> { 2, 3, 10 } },
-        { "Java", new List<int> { 8, 8, 8 } },
-        { "Python", new List<int> { 7, 7, 7 } }
-    }}
+Dictionary<string, string> usuarios = new Dictionary<string, string>
+{
+    { "user1", "senha123" },
+    { "user2", "abc456" },
+    // Adicione mais usuários conforme necessário
 };
 
-List<int> notasPythonMaria = notasAlunos["Maria"]["Python"];
-double mediaMariaEmPython = notasPythonMaria.Average();
-Console.WriteLine(mediaMariaEmPython);
+string nomeUsuario = "user2";
+string senha = "senha123";
+
+if (usuarios.ContainsKey(nomeUsuario) && usuarios[nomeUsuario] == senha)
+    Console.WriteLine("Login bem-sucedido!");
+else
+    Console.WriteLine("Nome de usuário ou senha incorretos.");
+
