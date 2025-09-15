@@ -49,9 +49,14 @@ Console.WriteLine("Cadastre uma banda: ");
 string bandaP = Console.ReadLine()!;
 bandas.Add(bandaP);
 
-foreach (string banda in bandas)
+// foreach (string banda in bandas)
+// {
+//     Console.WriteLine($"Banda: {banda}");
+// }
+
+//3
+
+for (int i = 0; i < bandas.Count; i++)
 {
-    Console.WriteLine($"Banda: {banda}");
+    Console.WriteLine($"Banda: {bandas[i]}");
 }
-
-
