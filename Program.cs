@@ -64,24 +64,42 @@
 
 //4
 
-List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
-int soma = 0;
+// List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
+// int soma = 0;
 
-foreach (int numero in numeros)
+// foreach (int numero in numeros)
+// {
+//     soma += numero;
+// }
+
+// Console.WriteLine($"A soma dos elementos da lista é: {soma}");
+
+
+// List<double> numeros2 = new List<double> { 1.5, 2.5, 3.5, 4.5, 5.5 };
+// double soma2 = 0;
+
+// foreach (double numero2 in numeros2)
+// {
+//     soma2 += numero2;
+// }
+
+// double media = soma / numeros2.Count;
+// Console.WriteLine($"A média dos elementos da lista é: {media}");
+
+
+List<int> numeros = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+for (int i = 0; i < numeros.Count; i++)
 {
-    soma += numero;
+    if (numeros[i] % 2 == 0) 
+    {
+        Console.WriteLine(numeros[i]);
+    }
 }
 
-Console.WriteLine($"A soma dos elementos da lista é: {soma}");
-
-
-List<double> numeros2 = new List<double> { 1.5, 2.5, 3.5, 4.5, 5.5 };
-double soma2 = 0;
-
-foreach (double numero2 in numeros2)
-{
-    soma2 += numero2;
-}
-
-double media = soma / numeros2.Count;
-Console.WriteLine($"A média dos elementos da lista é: {media}");
+//OU foreach (int numero in numeros)
+// {
+//     if (numero % 2 == 0) {
+//         Console.WriteLine(numero);
+//     }
+// }
