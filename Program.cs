@@ -43,11 +43,11 @@
 // }
 
 // 2
-List<string> bandas = new List<string> { "Metallica", "Iron Maiden", "Skillet" };
+// List<string> bandas = new List<string> { "Metallica", "Iron Maiden", "Skillet" };
 
-Console.WriteLine("Cadastre uma banda: ");
-string bandaP = Console.ReadLine()!;
-bandas.Add(bandaP);
+// Console.WriteLine("Cadastre uma banda: ");
+// string bandaP = Console.ReadLine()!;
+// bandas.Add(bandaP);
 
 // foreach (string banda in bandas)
 // {
@@ -56,7 +56,32 @@ bandas.Add(bandaP);
 
 //3
 
-for (int i = 0; i < bandas.Count; i++)
+// for (int i = 0; i < bandas.Count; i++)
+// {
+//     Console.WriteLine($"Banda: {bandas[i]}");
+// }
+
+
+//4
+
+List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
+int soma = 0;
+
+foreach (int numero in numeros)
 {
-    Console.WriteLine($"Banda: {bandas[i]}");
+    soma += numero;
 }
+
+Console.WriteLine($"A soma dos elementos da lista é: {soma}");
+
+
+List<double> numeros2 = new List<double> { 1.5, 2.5, 3.5, 4.5, 5.5 };
+double soma2 = 0;
+
+foreach (double numero2 in numeros2)
+{
+    soma2 += numero2;
+}
+
+double media = soma / numeros2.Count;
+Console.WriteLine($"A média dos elementos da lista é: {media}");
