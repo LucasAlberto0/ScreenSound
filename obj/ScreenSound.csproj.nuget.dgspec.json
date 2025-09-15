@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\Documents\\ScreenSound\\ScreenSound.csproj": {}
+    "C:\\Users\\Mosten\\Desktop\\Projects\\ScreenSound\\ScreenSound.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\Documents\\ScreenSound\\ScreenSound.csproj": {
+    "C:\\Users\\Mosten\\Desktop\\Projects\\ScreenSound\\ScreenSound.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\Documents\\ScreenSound\\ScreenSound.csproj",
+        "projectUniqueName": "C:\\Users\\Mosten\\Desktop\\Projects\\ScreenSound\\ScreenSound.csproj",
         "projectName": "ScreenSound",
-        "projectPath": "C:\\Users\\lucas\\Documents\\ScreenSound\\ScreenSound.csproj",
-        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\Documents\\ScreenSound\\obj\\",
+        "projectPath": "C:\\Users\\Mosten\\Desktop\\Projects\\ScreenSound\\ScreenSound.csproj",
+        "packagesPath": "C:\\Users\\Mosten\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mosten\\Desktop\\Projects\\ScreenSound\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mosten\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
